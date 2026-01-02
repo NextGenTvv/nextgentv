@@ -15,27 +15,26 @@
       <img src="logo.png" alt="NextGenTV Logo" class="logo">
       <h1>NextGenTV</h1>
     </div>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#channels">Channels</a>
-      <a href="#app">App</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="lang-switch">
+      <button onclick="setLanguage('en')" id="en-btn" class="active">ENG</button>
+      <button onclick="setLanguage('hr')" id="hr-btn">HR</button>
+    </div>
   </header>
 
   <section id="home" class="hero">
-    <h2>NextGenTV — The Future of Streaming</h2>
-    <p>Experience premium IPTV with HD & 4K quality, instant activation, and 24/7 global access.  
-      NextGenTV provides the ultimate streaming solution for entertainment lovers — watch everything, anywhere.</p>
-    <a href="https://t.me/NextGenTVV" target="_blank" class="btn-primary">Subscribe on Telegram</a>
+    <h2 data-en="NextGenTV — The Future of Streaming" data-hr="NextGenTV — Budućnost streaminga">NextGenTV — The Future of Streaming</h2>
+    <p data-en="Experience premium IPTV with HD & 4K quality, instant activation, and 24/7 global access."
+       data-hr="Uživajte u premium IPTV-u s HD i 4K kvalitetom, trenutnom aktivacijom i globalnim pristupom 24/7.">
+       Experience premium IPTV with HD & 4K quality, instant activation, and 24/7 global access.
+    </p>
+    <a href="https://t.me/NextGenTVV" target="_blank" class="btn-primary" 
+       data-en="Subscribe on Telegram" data-hr="Pretplatite se na Telegram">Subscribe on Telegram</a>
   </section>
 
   <section id="pricing" class="pricing">
-    <h2>Pricing</h2>
+    <h2 data-en="Our Packages" data-hr="Naši paketi">Our Packages</h2>
     <div class="pricing-container">
       <div class="price-card">
-        <img src="logo.png" alt="Plan Icon" class="price-icon">
         <h3>6 Months</h3>
         <p class="price">35 €</p>
         <ul>
@@ -43,53 +42,72 @@
           <li>Instant Activation</li>
           <li>Full Support</li>
         </ul>
+        <a href="https://t.me/NextGenTVV" class="btn-primary">Buy Now</a>
       </div>
       <div class="price-card">
-        <img src="logo.png" alt="Plan Icon" class="price-icon">
         <h3>12 Months</h3>
         <p class="price">60 €</p>
         <ul>
           <li>HD & 4K Channels</li>
-          <li>Save with Annual Plan</li>
+          <li>Annual Savings</li>
           <li>Full Support</li>
         </ul>
+        <a href="https://t.me/NextGenTVV" class="btn-primary">Buy Now</a>
       </div>
     </div>
   </section>
 
-  <section id="channels" class="channels">
-    <h2>Our Channels, Movies & Series</h2>
-    <p>Enjoy a wide range of entertainment with over 10,000 live channels and thousands of on-demand titles.  
-       Watch your favorite **movies, TV series, live sports, music, and kids’ shows** — all in HD & 4K quality.  
-       Whether you're a fan of action, comedy, or documentaries, NextGenTV brings it all to your screen!</p>
+  <section id="features" class="features">
+    <h2 data-en="General Features" data-hr="Glavne značajke">General Features</h2>
+    <div class="feature-grid">
+      <div>📡 10,000+ Live Channels</div>
+      <div>🎬 On-demand Movies & Series</div>
+      <div>⚙️ Auto Updates</div>
+      <div>📱 Android, Firestick, Smart TV</div>
+      <div>💬 24/7 Telegram Support</div>
+      <div>💳 Secure Payment</div>
+    </div>
+  </section>
 
-    <div class="channel-icons">
-      <span class="live">📺 Live TV</span>
-      <span class="movies">🎬 Movies</span>
-      <span class="series">📡 Series</span>
-      <span class="sports">⚽ Sports</span>
-      <span class="music">🎵 Music</span>
-      <span class="kids">🧒 Kids</span>
+  <section id="why" class="why">
+    <h2 data-en="Why Choose NextGenTV" data-hr="Zašto odabrati NextGenTV">Why Choose NextGenTV</h2>
+    <p data-en="NextGenTV delivers smooth, high-quality streaming with stable servers and worldwide coverage. Perfect for watching live TV, sports, movies, and series anytime, anywhere."
+       data-hr="NextGenTV pruža stabilan i kvalitetan streaming s brzim serverima i globalnim pristupom. Savršeno za gledanje TV kanala, sporta, filmova i serija u bilo koje vrijeme.">
+       NextGenTV delivers smooth, high-quality streaming with stable servers and worldwide coverage.
+    </p>
+  </section>
+
+  <section id="stats" class="stats">
+    <div>
+      <h3>10K+</h3>
+      <p>Channels</p>
+    </div>
+    <div>
+      <h3>5000+</h3>
+      <p>Movies & Series</p>
+    </div>
+    <div>
+      <h3>4K</h3>
+      <p>Quality</p>
     </div>
   </section>
 
   <section id="app" class="app">
-    <h2>NextGenTV Android App</h2>
-    <p>Download our Android app and enjoy IPTV directly on your Smart TV, Firestick, or Android device.  
-       Seamless performance, instant updates, and access to all your favorite content — anytime, anywhere.</p>
-    <img src="logo.png" alt="NextGenTV App Logo" class="app-logo">
+    <h2 data-en="Download Our App" data-hr="Preuzmite našu aplikaciju">Download Our App</h2>
+    <p data-en="Download our Android app and enjoy IPTV on Smart TV, Firestick, or Android devices."
+       data-hr="Preuzmite našu Android aplikaciju i uživajte u IPTV-u na Smart TV-u, Firesticku ili Android uređajima.">
+       Download our Android app and enjoy IPTV on Smart TV, Firestick, or Android devices.
+    </p>
+    <img src="logo.png" alt="App Logo" class="app-logo">
     <a href="https://go.aftvnews.com/6044982" target="_blank" class="btn-primary">Download App</a>
-    <p>Works on Android 5.0+, Firestick & Smart TVs</p>
   </section>
 
   <footer id="contact" class="contact">
-    <h2>Contact Us</h2>
+    <h2 data-en="Contact Us" data-hr="Kontaktirajte nas">Contact Us</h2>
     <p>Email: <a href="mailto:nextgeentv@gmail.com">nextgeentv@gmail.com</a></p>
     <p>Telegram: <a href="https://t.me/NextGenTVV" target="_blank">@NextGenTVV</a></p>
   </footer>
 
-  <!-- Floating Telegram Button -->
   <a href="https://t.me/NextGenTVV" class="telegram-float" target="_blank">💬</a>
-
 </body>
 </html>
