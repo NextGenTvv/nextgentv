@@ -299,3 +299,48 @@ footer a:hover {
   background: #00d8ff;
   transform: scale(1.1);
 }
+/* ===== APP DOWNLOAD SECTION ===== */
+.app {
+  padding: 80px 20px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.app h2 {
+  color: #ff004c;
+  text-shadow: 0 0 20px #ff004c;
+}
+
+.app-box {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 30px 40px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 20px #a100ff50;
+  transition: 0.3s;
+}
+
+.app-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #00d8ff;
+}
+
+.app-logo {
+  width: 120px;
+  height: auto;
+  filter: drop-shadow(0 0 10px #ff004c);
+}
+
+.code-text {
+  font-size: 1.3em;
+  color: #00d8ff;
+  font-weight: bold;
+  text-shadow: 0 0 10px #00d8ff;
+}
+
