@@ -1,54 +1,61 @@
-/* ===== GLOBAL ===== */
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
+  background: linear-gradient(180deg, #0b0014 0%, #1b002b 100%);
   color: white;
   text-align: center;
-  background: radial-gradient(circle at top, #0b0014, #000);
-  background-image: url('https://images.unsplash.com/photo-1586822844401-4b37b1b57d60?auto=format&fit=crop&w=1920&q=80');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
 }
 
-/* ===== HEADER ===== */
+/* HEADER */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 40px;
-  background: rgba(0, 0, 0, 0.85);
-  border-bottom: 2px solid #ff004c;
-  box-shadow: 0 0 20px #ff004c;
-}
-
-.logo-container {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  background: linear-gradient(90deg, #ff004c, #a100ff, #00d8ff);
+  padding: 10px 40px;
 }
 
 .logo {
-  width: 120px;
+  width: 100px;
   height: auto;
 }
 
 header h1 {
+  margin-left: 10px;
   font-size: 1.8em;
-  color: #ff004c;
 }
 
-/* ===== BUTTONS ===== */
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #00d8ff;
+}
+
+/* HERO */
+.hero {
+  padding: 100px 20px;
+  background: radial-gradient(circle at top, #1b002b, #000);
+}
+
+.hero h2 {
+  color: #ff004c;
+  font-size: 2.4em;
+  text-shadow: 0 0 20px #ff004c;
+}
+
 .btn-primary {
   background: #ff004c;
   color: white;
   padding: 12px 25px;
   border-radius: 8px;
   text-decoration: none;
-  display: inline-block;
-  margin-top: 15px;
-  transition: 0.3s;
   font-weight: bold;
+  transition: 0.3s;
 }
 
 .btn-primary:hover {
@@ -56,27 +63,15 @@ header h1 {
   box-shadow: 0 0 20px #00d8ff;
 }
 
-/* ===== HERO ===== */
-.hero {
-  padding: 100px 20px;
-  background: rgba(0, 0, 0, 0.6);
-}
-
-.hero h2 {
-  font-size: 2.6em;
-  color: #ff004c;
-  text-shadow: 0 0 25px #ff004c;
-}
-
-/* ===== PRICING ===== */
+/* PRICING */
 .pricing {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(255, 255, 255, 0.05);
   padding: 80px 20px;
 }
 
 .pricing h2 {
-  color: #ff004c;
-  text-shadow: 0 0 20px #ff004c;
+  color: #00d8ff;
+  text-shadow: 0 0 20px #00d8ff;
 }
 
 .pricing-container {
@@ -87,59 +82,56 @@ header h1 {
 }
 
 .price-card {
-  background: rgba(255, 255, 255, 0.07);
-  padding: 30px;
+  background: rgba(255, 255, 255, 0.08);
   border-radius: 15px;
   width: 260px;
-  border: 1px solid rgba(255, 0, 76, 0.5);
-  animation: glow 3s infinite alternate;
-  transition: 0.3s;
-}
-
-@keyframes glow {
-  from { box-shadow: 0 0 15px #ff004c; }
-  to { box-shadow: 0 0 30px #00d8ff; }
+  padding: 30px;
+  border: 1px solid #ff004c;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .price-card:hover {
   transform: scale(1.05);
+  box-shadow: 0 0 20px #00d8ff;
 }
 
-.price-card h3 {
-  color: #00d8ff;
-  font-size: 1.5em;
+.price-logo {
+  width: 60px;
+  height: auto;
+  margin-bottom: 10px;
 }
 
 .price {
-  font-size: 2.2em;
   color: #ff004c;
+  font-size: 2em;
+  margin: 10px 0;
 }
 
-/* ===== CHANNELS ===== */
+/* CHANNELS */
 .channels {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.6);
   padding: 70px 20px;
 }
 
 .channels h2 {
-  color: #00d8ff;
-  text-shadow: 0 0 15px #00d8ff;
+  color: #a100ff;
+  text-shadow: 0 0 20px #a100ff;
 }
 
 .channel-icons {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
-  margin-top: 30px;
+  flex-wrap: wrap;
+  margin-top: 25px;
 }
 
 .channel-icons .icon {
-  padding: 12px 20px;
+  padding: 10px 18px;
   border-radius: 25px;
   font-weight: bold;
   color: white;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
 }
 
 .icon.live { background: #ff004c; }
@@ -149,69 +141,39 @@ header h1 {
 .icon.music { background: #ffb700; }
 .icon.kids { background: #ff6ad5; }
 
-/* ===== WHY CHOOSE ===== */
-.why {
-  padding: 60px 20px;
-  background: rgba(10, 0, 20, 0.8);
-}
-
-.why h2 {
-  color: #ff004c;
-  text-shadow: 0 0 20px #ff004c;
-}
-
-/* ===== TESTIMONIALS ===== */
-.testimonials {
-  background: rgba(0, 0, 0, 0.8);
+/* REVIEWS */
+.reviews {
   padding: 80px 20px;
+  background: rgba(255, 255, 255, 0.05);
 }
 
-.testimonials h2 {
+.reviews h2 {
   color: #00d8ff;
-  text-shadow: 0 0 15px #00d8ff;
 }
 
-.testimonial-container {
+.review-grid {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 25px;
-  margin-top: 40px;
+  flex-wrap: wrap;
+  margin-top: 30px;
 }
 
-.testimonial {
+.review {
+  width: 280px;
   background: rgba(255, 255, 255, 0.08);
   border-radius: 10px;
   padding: 20px;
-  width: 300px;
   box-shadow: 0 0 15px #ff004c;
   font-style: italic;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s;
 }
 
-.testimonial:hover {
+.review:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 25px #00d8ff;
 }
 
-/* ===== APP SECTION ===== */
-.app {
-  padding: 60px 20px;
-  background: rgba(0, 0, 0, 0.6);
-}
-
-.app h2 {
-  color: #ff004c;
-}
-
-.app-logo {
-  width: 130px;
-  margin: 20px auto;
-  display: block;
-  filter: drop-shadow(0 0 10px #ff004c);
-}
-
-/* ===== FOOTER ===== */
+/* FOOTER */
 footer {
   background: #0a0012;
   padding: 40px 20px;
@@ -228,7 +190,7 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* ===== TELEGRAM FLOAT ===== */
+/* TELEGRAM FLOAT */
 .telegram-float {
   position: fixed;
   bottom: 25px;
@@ -246,21 +208,4 @@ footer a:hover {
 .telegram-float:hover {
   background: #00d8ff;
   transform: scale(1.1);
-}
-
-/* ===== RESPONSIVE ===== */
-@media (max-width: 768px) {
-  .pricing-container,
-  .testimonial-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .logo {
-    width: 90px;
-  }
-
-  .price-card {
-    width: 85%;
-  }
 }
