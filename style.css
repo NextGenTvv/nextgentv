@@ -1,7 +1,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
-  background: linear-gradient(135deg, #14001f, #000);
+  background: linear-gradient(135deg, #0a0012, #000);
   color: white;
   text-align: center;
 }
@@ -21,8 +21,8 @@ header {
 }
 
 .logo {
-  width: 50px;
-  height: 50px;
+  width: 65px;
+  height: 65px;
   margin-right: 10px;
 }
 
@@ -45,9 +45,17 @@ nav a:hover {
 }
 
 .hero h2 {
-  font-size: 2.4em;
+  font-size: 2.5em;
   color: #ff004c;
   text-shadow: 0 0 20px #ff004c;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: 20px auto;
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #e0e0e0;
 }
 
 .btn-primary {
@@ -93,7 +101,7 @@ nav a:hover {
 }
 
 .price-icon {
-  width: 60px;
+  width: 70px;
   margin-bottom: 10px;
 }
 
@@ -138,7 +146,7 @@ nav a:hover {
 }
 
 .app-logo {
-  width: 100px;
+  width: 120px;
   margin: 20px auto;
   display: block;
 }
