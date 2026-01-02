@@ -1,8 +1,7 @@
-/* General Style */
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
-  background: radial-gradient(circle at top left, #1a0028, #000000);
+  background: linear-gradient(135deg, #14001f, #000);
   color: white;
   text-align: center;
 }
@@ -13,7 +12,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 15px 40px;
-  background: linear-gradient(90deg, #ff004c, #6400ff, #00d8ff);
+  background: linear-gradient(90deg, #ff004c, #6200ea, #00d4ff);
 }
 
 .logo-container {
@@ -42,13 +41,13 @@ nav a:hover {
 /* Hero */
 .hero {
   padding: 100px 20px;
-  background: linear-gradient(180deg, #190022, #140022, #000);
+  background: radial-gradient(circle, #2e004f, #0a0015);
 }
 
 .hero h2 {
-  font-size: 2.5em;
+  font-size: 2.4em;
   color: #ff004c;
-  text-shadow: 0 0 15px #ff004c;
+  text-shadow: 0 0 20px #ff004c;
 }
 
 .btn-primary {
@@ -75,17 +74,17 @@ nav a:hover {
 .pricing-container {
   display: flex;
   justify-content: center;
-  gap: 30px;
   flex-wrap: wrap;
+  gap: 30px;
 }
 
 .price-card {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.1);
   padding: 25px;
   border-radius: 15px;
   width: 250px;
-  box-shadow: 0 0 15px rgba(255, 0, 76, 0.6);
   transition: 0.3s;
+  box-shadow: 0 0 15px #ff004c;
 }
 
 .price-card:hover {
@@ -112,21 +111,27 @@ nav a:hover {
 
 .channel-icons span {
   display: inline-block;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid #ff004c;
   padding: 10px 20px;
   border-radius: 10px;
   margin: 8px;
-  box-shadow: 0 0 10px #ff004c;
+  color: white;
+  font-weight: bold;
   transition: 0.3s;
 }
 
+.live { background: #ff004c; }
+.movies { background: #d500f9; }
+.series { background: #2979ff; }
+.sports { background: #00e676; }
+.music { background: #ff9100; }
+.kids { background: #00bcd4; }
+
 .channel-icons span:hover {
-  background: #00d8ff;
-  box-shadow: 0 0 20px #00d8ff;
+  transform: scale(1.1);
+  box-shadow: 0 0 15px white;
 }
 
-/* App Section */
+/* App */
 .app {
   padding: 60px 20px;
   background: radial-gradient(circle, #190022, #000);
@@ -138,26 +143,6 @@ nav a:hover {
   display: block;
 }
 
-/* Reviews */
-.reviews {
-  padding: 60px 20px;
-}
-
-.review-container {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.review-card {
-  background: rgba(255, 255, 255, 0.08);
-  padding: 20px;
-  border-radius: 12px;
-  width: 250px;
-  box-shadow: 0 0 10px #6400ff;
-}
-
 /* Footer */
 footer {
   background: #0a0012;
@@ -165,8 +150,23 @@ footer {
   border-top: 2px solid #ff004c;
 }
 
-.telegram-icon {
-  width: 25px;
-  vertical-align: middle;
-  margin-right: 8px;
+/* Floating Telegram */
+.telegram-float {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #0088cc;
+  color: white;
+  font-size: 1.8em;
+  border-radius: 50%;
+  padding: 14px 17px;
+  text-decoration: none;
+  box-shadow: 0 0 15px #00d8ff;
+  transition: 0.3s;
+}
+
+.telegram-float:hover {
+  background: #00d8ff;
+  transform: scale(1.1);
+  box-shadow: 0 0 25px #00d8ff;
 }
