@@ -33,7 +33,7 @@ header.shrink {
 }
 
 .logo {
-  width: 80px;
+  width: 130px;
   height: auto;
   transition: all 0.3s ease;
 }
@@ -131,9 +131,9 @@ nav a:hover {
 }
 
 .price-logo {
-  width: 90px;
+  width: 140px;
   height: auto;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .price {
