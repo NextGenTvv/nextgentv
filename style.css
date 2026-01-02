@@ -299,42 +299,60 @@ footer a:hover {
   background: #00d8ff;
   transform: scale(1.1);
 }
+
 /* ===== APP DOWNLOAD SECTION ===== */
 .app {
   padding: 80px 20px;
   background: rgba(0, 0, 0, 0.6);
 }
 
-.app h2 {
-  color: #ff004c;
-  text-shadow: 0 0 20px #ff004c;
-}
-
-.app-box {
-  margin-top: 30px;
+.app-container {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 15px;
+  flex-wrap: wrap;
+  gap: 50px;
+  max-width: 1000px;
+  margin: 0 auto;
   background: rgba(255, 255, 255, 0.05);
-  border-radius: 12px;
-  padding: 30px 40px;
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 0 0 20px #a100ff50;
+  border-radius: 20px;
+  padding: 50px;
+  box-shadow: 0 0 25px #a100ff50;
   transition: 0.3s;
 }
 
-.app-box:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 25px #00d8ff;
+.app-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 30px #00d8ff70;
+}
+
+.app-left {
+  flex: 1;
+  text-align: center;
 }
 
 .app-logo {
-  width: 120px;
+  width: 240px;
   height: auto;
   filter: drop-shadow(0 0 10px #ff004c);
+}
+
+.app-right {
+  flex: 1;
+  text-align: left;
+  min-width: 280px;
+}
+
+.app-right h2 {
+  color: #ff004c;
+  text-shadow: 0 0 20px #ff004c;
+  margin-top: 0;
+}
+
+.app-right p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #eee;
 }
 
 .code-text {
@@ -342,5 +360,70 @@ footer a:hover {
   color: #00d8ff;
   font-weight: bold;
   text-shadow: 0 0 10px #00d8ff;
+  margin: 15px 0;
+}
+
+.app-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.btn-primary {
+  background: #ff004c;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  display: inline-block;
+  text-align: center;
+  min-width: 230px;
+}
+
+.btn-primary:hover {
+  background: #00d8ff;
+  box-shadow: 0 0 20px #00d8ff;
+}
+
+.android-btn {
+  background: #3ddc84;
+}
+
+.android-btn:hover {
+  background: #00d8ff;
+  box-shadow: 0 0 20px #00d8ff;
+}
+
+.ios-btn {
+  background: #007aff;
+}
+
+.ios-btn:hover {
+  background: #00d8ff;
+  box-shadow: 0 0 20px #00d8ff;
+}
+
+/* Responsive (mobile view) */
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 25px;
+  }
+
+  .app-right {
+    text-align: center;
+  }
+
+  .btn-primary {
+    min-width: 100%;
+  }
+
+  .app-logo {
+    width: 180px;
+  }
 }
 
