@@ -426,4 +426,7 @@ footer a:hover {
     width: 180px;
   }
 }
-
+.price-card li strong {
+  color: #00ff88;
+  text-shadow: 0 0 10px #00ff88;
+}
