@@ -497,3 +497,7 @@ footer#contact {
     height: 22px;
   }
 }
+/* FORCE HIDE footer WhatsApp section */
+footer#contact {
+  display: none !important;
+}
