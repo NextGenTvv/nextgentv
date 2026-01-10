@@ -1,463 +1,98 @@
-/* ===== GENERAL ===== */
-body {
-  font-family: 'Poppins', sans-serif;
+/* RESET */
+* {
   margin: 0;
-  background: linear-gradient(180deg, #0b0014 0%, #1b002b 100%);
-  color: white;
-  text-align: center;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* ===== HEADER ===== */
-header {
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0b0615;
+  color: #ffffff;
+}
+
+/* HEADER */
+.site-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(90deg, #ff004c, #a100ff, #00d8ff);
-  padding: 20px 40px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  padding: 15px 20px;
+  background: linear-gradient(90deg, #a100ff, #ff008c);
 }
 
-header.shrink {
-  padding: 10px 30px;
-  background: linear-gradient(90deg, #a100ff, #ff004c);
-}
-
-.logo-container {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.logo {
-  width: 130px;
-  height: auto;
-  transition: all 0.3s ease;
-}
-
-header.shrink .logo {
-  width: 55px;
-}
-
-.brand-name {
-  font-size: 2em;
-  color: white;
-  font-weight: 700;
-  margin: 0;
-  line-height: 1;
-  transition: all 0.3s ease;
-}
-
-header.shrink .brand-name {
-  font-size: 1.6em;
-}
-
-nav {
-  display: flex;
-  gap: 15px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
+.site-header .logo {
   font-weight: bold;
-  transition: 0.3s;
+  font-size: 20px;
 }
 
-nav a:hover {
-  color: #00d8ff;
-}
-
-/* ===== HERO ===== */
-.hero {
-  padding: 100px 20px;
-  background: radial-gradient(circle at top, #1b002b, #000);
-}
-
-.hero h2 {
-  color: #ff004c;
-  font-size: 2.6em;
-  text-shadow: 0 0 25px #ff004c;
-}
-
-.btn-primary {
-  background: #ff004c;
-  color: white;
-  padding: 12px 25px;
-  border-radius: 8px;
+.site-header .nav a {
+  color: #fff;
   text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
+  margin-left: 15px;
+  font-size: 14px;
 }
 
-.btn-primary:hover {
-  background: #00d8ff;
-  box-shadow: 0 0 20px #00d8ff;
+/* APP SECTION */
+.app-section {
+  padding: 60px 20px;
 }
 
-/* ===== PRICING ===== */
-.pricing {
-  background: rgba(255, 255, 255, 0.05);
-  padding: 80px 20px;
-}
-
-.pricing h2 {
-  color: #00d8ff;
-  text-shadow: 0 0 20px #00d8ff;
-}
-
-.pricing-container {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-.price-card {
-  background: rgba(255, 255, 255, 0.08);
-  border-radius: 15px;
-  width: 260px;
+.app-box {
+  max-width: 900px;
+  margin: auto;
+  background: #130a25;
+  border-radius: 12px;
   padding: 30px;
-  border: 1px solid #ff004c;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.price-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px #00d8ff;
-}
-
-.price-logo {
-  width: 140px;
-  height: auto;
-  margin-bottom: 20px;
-}
-
-.price {
-  color: #ff004c;
-  font-size: 2em;
-  margin: 10px 0;
-}
-
-/* ===== CHANNELS ===== */
-.channels {
-  background: rgba(0, 0, 0, 0.6);
-  padding: 70px 20px;
-}
-
-.channels h2 {
-  color: #a100ff;
-  text-shadow: 0 0 20px #a100ff;
-}
-
-.channels-text {
-  max-width: 800px;
-  margin: 0 auto;
-  font-size: 1.1em;
-  line-height: 1.6;
-}
-
-.channel-icons {
   display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-  margin-top: 25px;
-}
-
-.channel-icons .icon {
-  padding: 10px 18px;
-  border-radius: 25px;
-  font-weight: bold;
-  color: white;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
-}
-
-.icon.live { background: #ff004c; }
-.icon.movies { background: #a100ff; }
-.icon.series { background: #00bfff; }
-.icon.sports { background: #00ff6a; }
-.icon.music { background: #ffb700; }
-.icon.kids { background: #ff6ad5; }
-
-/* ===== STATS ===== */
-.stats {
-  background: linear-gradient(90deg, #a100ff20, #00d8ff20);
-  padding: 80px 20px;
-}
-
-.stats h2 {
-  color: #ff004c;
-  text-shadow: 0 0 20px #ff004c;
-  font-size: 2em;
-  margin-bottom: 10px;
-}
-
-.stats p {
-  font-size: 1.1em;
-  max-width: 700px;
-  margin: 0 auto 40px;
-  color: #ddd;
-}
-
-.stats-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   gap: 30px;
-}
-
-.stat-box {
-  background: rgba(255, 255, 255, 0.07);
-  border-radius: 15px;
-  padding: 25px 40px;
-  width: 180px;
-  box-shadow: 0 0 15px #00d8ff50;
-  transition: 0.3s;
-}
-
-.stat-box:hover {
-  transform: scale(1.08);
-  box-shadow: 0 0 25px #ff004c90;
-}
-
-.number {
-  font-size: 2em;
-  font-weight: bold;
-  color: #00d8ff;
-  text-shadow: 0 0 20px #00d8ff;
-}
-
-/* ===== REVIEWS ===== */
-.reviews {
-  padding: 80px 20px;
-  background: rgba(255, 255, 255, 0.05);
-}
-
-.reviews h2 {
-  color: #00d8ff;
-}
-
-.review-grid {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  flex-wrap: wrap;
-  margin-top: 30px;
-}
-
-.review {
-  width: 280px;
-  background: rgba(255, 255, 255, 0.08);
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 0 15px #ff004c;
-  font-style: italic;
-  transition: transform 0.3s;
-}
-
-.review:hover {
-  transform: scale(1.05);
-}
-
-/* ===== FOOTER ===== */
-footer {
-  background: #0a0012;
-  padding: 40px 20px;
-  border-top: 2px solid #ff004c;
-}
-
-footer a {
-  color: #00d8ff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-/* ===== TELEGRAM FLOAT ===== */
-.telegram-float {
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  background: #0088cc;
-  color: white;
-  font-size: 1.8em;
-  border-radius: 50%;
-  padding: 14px 17px;
-  text-decoration: none;
-  box-shadow: 0 0 15px #00d8ff;
-  transition: 0.3s;
-}
-
-.telegram-float:hover {
-  background: #00d8ff;
-  transform: scale(1.1);
-}
-
-/* ===== APP DOWNLOAD SECTION ===== */
-.app {
-  padding: 80px 20px;
-  background: rgba(0, 0, 0, 0.6);
-}
-
-.app-container {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 50px;
-  max-width: 1000px;
-  margin: 0 auto;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 20px;
-  padding: 50px;
-  box-shadow: 0 0 25px #a100ff50;
-  transition: 0.3s;
 }
 
-.app-container:hover {
-  transform: scale(1.02);
-  box-shadow: 0 0 30px #00d8ff70;
+.app-logo img {
+  width: 120px;
+  height: 120px;
 }
 
-.app-left {
-  flex: 1;
-  text-align: center;
+.app-info h2 {
+  margin-bottom: 10px;
+  color: #ff2bff;
 }
 
-.app-logo {
-  width: 240px;
-  height: auto;
-  filter: drop-shadow(0 0 10px #ff004c);
-}
-
-.app-right {
-  flex: 1;
-  text-align: left;
-  min-width: 280px;
-}
-
-.app-right h2 {
-  color: #ff004c;
-  text-shadow: 0 0 20px #ff004c;
-  margin-top: 0;
-}
-
-.app-right p {
-  font-size: 1.1em;
+.app-info p {
+  margin-bottom: 10px;
   line-height: 1.6;
-  color: #eee;
 }
 
 .code-text {
-  font-size: 1.3em;
-  color: #00d8ff;
-  font-weight: bold;
-  text-shadow: 0 0 10px #00d8ff;
   margin: 15px 0;
 }
 
+/* BUTTONS */
 .app-links {
   display: flex;
-  flex-wrap: wrap;
   gap: 15px;
-  margin-top: 20px;
+  flex-wrap: wrap;
 }
 
-.btn-primary {
-  background: #ff004c;
-  color: white;
-  padding: 12px 25px;
+.btn {
+  padding: 12px 18px;
   border-radius: 8px;
   text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
+  color: #fff;
+  font-size: 14px;
   display: inline-block;
-  text-align: center;
-  min-width: 230px;
 }
 
-.btn-primary:hover {
-  background: #00d8ff;
-  box-shadow: 0 0 20px #00d8ff;
+.btn-android {
+  background: #32d851;
 }
 
-.android-btn {
-  background: #3ddc84;
+.btn-ios {
+  background: #1e90ff;
 }
 
-.android-btn:hover {
-  background: #00d8ff;
-  box-shadow: 0 0 20px #00d8ff;
-}
-
-.ios-btn {
-  background: #007aff;
-}
-
-.ios-btn:hover {
-  background: #00d8ff;
-  box-shadow: 0 0 20px #00d8ff;
-}
-
-/* Responsive (mobile view) */
-@media (max-width: 768px) {
-  .app-container {
-    flex-direction: column;
-    text-align: center;
-    padding: 40px 25px;
-  }
-
-  .app-right {
-    text-align: center;
-  }
-
-  .btn-primary {
-    min-width: 100%;
-  }
-
-  .app-logo {
-    width: 180px;
-  }
-}
-.price-card li strong {
-  color: #00ff88;
-  text-shadow: 0 0 10px #00ff88;
-}
-/* WhatsApp Button Style */
-.whatsapp-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #25D366;
-  color: white;
-  font-weight: bold;
-  padding: 12px 24px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-size: 18px;
-  transition: 0.3s;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.whatsapp-btn:hover {
-  background-color: #20ba5a;
-  transform: scale(1.05);
-}
-
-.whatsapp-icon {
-  width: 26px;
-  height: 26px;
-  margin-right: 10px;
-  filter: brightness(0) invert(1);
-}/* Floating WhatsApp Button */
-.whatsapp-btn {
+/* FLOATING WHATSAPP BUTTON */
+.whatsapp-float {
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -468,36 +103,29 @@ footer a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 9999;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  text-decoration: none;
+  z-index: 99999;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
 }
 
-/* WhatsApp icon size */
-.whatsapp-icon {
+.whatsapp-float img {
   width: 28px;
   height: 28px;
 }
 
-/* Hide footer spacing effect */
-footer#contact {
-  padding: 0;
-  margin: 0;
-}
-
-/* Smaller on mobile */
+/* MOBILE */
 @media (max-width: 768px) {
-  .whatsapp-btn {
+  .app-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .whatsapp-float {
     width: 45px;
     height: 45px;
   }
 
-  .whatsapp-icon {
+  .whatsapp-float img {
     width: 22px;
     height: 22px;
   }
-}
-/* FORCE HIDE footer WhatsApp section */
-footer#contact {
-  display: none !important;
 }
