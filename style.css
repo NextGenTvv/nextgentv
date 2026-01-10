@@ -12,65 +12,60 @@ body {
 }
 
 /* HEADER */
-.site-header {
+.header {
+  background: linear-gradient(90deg, #a100ff, #ff008c);
+  padding: 15px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
-  background: linear-gradient(90deg, #a100ff, #ff008c);
 }
 
-.site-header .logo {
+.logo {
   font-weight: bold;
   font-size: 20px;
 }
 
-.site-header .nav a {
+.nav a {
   color: #fff;
   text-decoration: none;
   margin-left: 15px;
   font-size: 14px;
 }
 
-/* APP SECTION */
-.app-section {
+/* MAIN */
+.main {
   padding: 60px 20px;
-}
-
-.app-box {
-  max-width: 900px;
-  margin: auto;
-  background: #130a25;
-  border-radius: 12px;
-  padding: 30px;
   display: flex;
-  gap: 30px;
-  align-items: center;
+  justify-content: center;
 }
 
-.app-logo img {
-  width: 120px;
-  height: 120px;
+.card {
+  max-width: 800px;
+  background: #140a28;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
 }
 
-.app-info h2 {
-  margin-bottom: 10px;
+.card h1 {
+  margin-bottom: 15px;
   color: #ff2bff;
 }
 
-.app-info p {
-  margin-bottom: 10px;
+.card p {
+  margin-bottom: 15px;
   line-height: 1.6;
 }
 
-.code-text {
-  margin: 15px 0;
+.code {
+  margin: 20px 0;
 }
 
 /* BUTTONS */
-.app-links {
+.buttons {
   display: flex;
   gap: 15px;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -80,14 +75,13 @@ body {
   text-decoration: none;
   color: #fff;
   font-size: 14px;
-  display: inline-block;
 }
 
-.btn-android {
+.android {
   background: #32d851;
 }
 
-.btn-ios {
+.ios {
   background: #1e90ff;
 }
 
@@ -103,7 +97,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 99999;
+  z-index: 999999;
   box-shadow: 0 4px 12px rgba(0,0,0,0.4);
 }
 
@@ -114,11 +108,6 @@ body {
 
 /* MOBILE */
 @media (max-width: 768px) {
-  .app-box {
-    flex-direction: column;
-    text-align: center;
-  }
-
   .whatsapp-float {
     width: 45px;
     height: 45px;
