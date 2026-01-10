@@ -155,3 +155,46 @@ nav a:hover { color: #ffbb33; }
   nav ul{flex-wrap:wrap;justify-content:center;}
   .pricing-container{flex-direction:column;align-items:center;}
 }
+/* About Section */
+#about {
+  padding: 80px 20px;
+  text-align: center;
+  background: linear-gradient(180deg, #130024 0%, #200045 100%);
+  color: white;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 0, 255, 0.2);
+}
+
+#about h2 {
+  font-size: 2em;
+  color: #ff33ff;
+  margin-bottom: 15px;
+}
+
+#about p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ddd;
+  margin-bottom: 15px;
+}
+
+/* Channel Tags with Flags */
+#channels .tag {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  margin: 5px;
+}
+
+.tag.red { background: #ff4b5c; }
+.tag.blue { background: #3b82f6; }
+.tag.cyan { background: #06b6d4; }
+.tag.green { background: #10b981; }
+.tag.orange { background: #f97316; }
+.tag.pink { background: #ec4899; }
+.tag.yellow { background: #eab308; color: black; }
+.tag.purple { background: #8b5cf6; }
