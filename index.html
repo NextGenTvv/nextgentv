@@ -93,14 +93,14 @@
     <p><strong>• 5685051 — NextGenTV App 2</strong></p>
 
     <div class="app-links">
-      <a href="https://go.aftvnews.com/6044982" target="_blank" class="btn-green">
-        🤖 Download NextGenTV App 1
+      <a href="https://go.aftvnews.com/6044982" target="_blank" class="btn-click">
+        🔶 NextGenTV App 1
       </a>
-      <a href="http://aftv.news/5685051" target="_blank" class="btn-green-alt">
-        🤖 Download NextGenTV App 2
+      <a href="http://aftv.news/5685051" target="_blank" class="btn-click">
+        🔶 NextGenTV App 2
       </a>
-      <a href="https://apps.apple.com/us/app/vivo-player-smart-iptv-player/id6479256394" target="_blank" class="btn-blue">
-        🍎 Download for iOS (Vivo Player)
+      <a href="https://apps.apple.com/us/app/vivo-player-smart-iptv-player/id6479256394" target="_blank" class="btn-click">
+        🔶 Vivo Player (iOS)
       </a>
     </div>
   </section>
@@ -128,6 +128,14 @@
     }, { threshold: 0.2 });
 
     elements.forEach(el => observer.observe(el));
+
+    // Add click animation
+    document.querySelectorAll('.btn-click').forEach(button => {
+      button.addEventListener('click', () => {
+        button.classList.add('active');
+        setTimeout(() => button.classList.remove('active'), 300);
+      });
+    });
   </script>
 
 </body>
