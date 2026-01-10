@@ -8,7 +8,7 @@
 </head>
 <body>
 
-  <header>
+  <header class="fade-in">
     <div class="logo">
       <img src="logo.png" alt="NextGenTV Logo" class="logo-img">
       <span class="logo-text">NextGenTV</span>
@@ -24,13 +24,13 @@
     </nav>
   </header>
 
-  <section id="hero">
+  <section id="hero" class="fade-in">
     <h1>NextGenTV — The Future of Streaming</h1>
     <p>Enjoy premium IPTV with HD & 4K channels, instant activation, and 24/7 support.</p>
     <a href="#pricing" class="btn-primary">View Plans</a>
   </section>
 
-  <section id="pricing" class="pricing">
+  <section id="pricing" class="pricing fade-in">
     <h2>Our Packages</h2>
     <div class="pricing-container">
       <div class="price-card">
@@ -61,7 +61,7 @@
     </div>
   </section>
 
-  <section id="channels">
+  <section id="channels" class="fade-in">
     <h2>Our Channels</h2>
     <p>Explore 10,000+ live channels, movies, and series from all around the world — including sports, kids, and music content in HD & 4K.</p>
     <div class="channel-tags">
@@ -74,7 +74,7 @@
     </div>
   </section>
 
-  <section id="stats">
+  <section id="stats" class="fade-in">
     <h2>Why Choose NextGenTV</h2>
     <div class="stats-container">
       <div class="stat"><h3>10K+</h3><p>Live Channels</p></div>
@@ -83,7 +83,7 @@
     </div>
   </section>
 
-  <section id="app">
+  <section id="app" class="fade-in">
     <h2>Download Our App</h2>
     <p>Get NextGenTV on any device — Android TV, Firestick, Smart TV, or iOS.  
        Install the app and start streaming instantly with the best IPTV experience.</p>
@@ -94,28 +94,31 @@
     </div>
   </section>
 
-  <footer id="contact">
+  <footer id="contact" class="fade-in">
     <h2>Contact Us</h2>
-    <a href="https://wa.me/447418337834" target="_blank" class="whatsapp-btn">
+    <a href="https://wa.me/447417337834" target="_blank" class="whatsapp-btn">
       <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
       Chat on WhatsApp
     </a>
   </footer>
 
-  <a href="https://wa.me/447418337834" class="whatsapp-float" target="_blank">
+  <a href="https://wa.me/447417337834" class="whatsapp-float" target="_blank">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
   </a>
-<script>
-  const elements = document.querySelectorAll('.fade-in');
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      }
-    });
-  }, { threshold: 0.2 });
 
-  elements.forEach(el => observer.observe(el));
-</script>
+  <!-- Scroll Animation Script -->
+  <script>
+    const elements = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    elements.forEach(el => observer.observe(el));
+  </script>
+
 </body>
 </html>
