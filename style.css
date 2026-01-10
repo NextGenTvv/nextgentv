@@ -1,120 +1,315 @@
-/* RESET */
+/* === GENERAL RESET === */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #0b0615;
-  color: #ffffff;
-}
-
-/* HEADER */
-.header {
-  background: linear-gradient(90deg, #a100ff, #ff008c);
-  padding: 15px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.nav a {
-  color: #fff;
-  text-decoration: none;
-  margin-left: 15px;
-  font-size: 14px;
-}
-
-/* MAIN */
-.main {
-  padding: 60px 20px;
-  display: flex;
-  justify-content: center;
-}
-
-.card {
-  max-width: 800px;
-  background: #140a28;
-  padding: 30px;
-  border-radius: 12px;
+  background-color: #0b0014;
+  color: white;
   text-align: center;
 }
 
-.card h1 {
-  margin-bottom: 15px;
-  color: #ff2bff;
-}
-
-.card p {
-  margin-bottom: 15px;
-  line-height: 1.6;
-}
-
-.code {
-  margin: 20px 0;
-}
-
-/* BUTTONS */
-.buttons {
+/* === HEADER === */
+header {
   display: flex;
-  gap: 15px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: linear-gradient(90deg, #ff0099, #493240);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 60px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffbb33;
+}
+
+/* === HERO SECTION === */
+.hero {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #3a0088, #ff0099);
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.btn-primary {
+  display: inline-block;
+  background-color: #ff0099;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #ffbb33;
+  color: black;
+}
+
+/* === PRICING === */
+.pricing {
+  padding: 80px 20px;
+  background-color: #120024;
+}
+
+.pricing h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #ff33cc;
+}
+
+.pricing-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.price-card {
+  background: linear-gradient(145deg, #1c0033, #29004d);
+  border: 2px solid #ff33cc;
+  border-radius: 15px;
+  padding: 30px;
+  width: 280px;
+  transition: 0.3s;
+  box-shadow: 0px 4px 15px rgba(255, 0, 150, 0.3);
+}
+
+.price-card:hover {
+  transform: translateY(-5px);
+}
+
+.price-logo {
+  width: 70px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.price {
+  font-size: 30px;
+  color: #ff33cc;
+  font-weight: bold;
+}
+
+.price-card ul {
+  list-style: none;
+  margin: 15px 0;
+}
+
+.price-card ul li {
+  margin: 8px 0;
+}
+
+/* === CHANNELS === */
+#channels {
+  padding: 70px 20px;
+  background-color: #0f001e;
+}
+
+#channels h2 {
+  color: #ff66cc;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.channel-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.tag {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.red { background-color: #ff3b3b; }
+.purple { background-color: #a033ff; }
+.blue { background-color: #0099ff; }
+.green { background-color: #00cc66; }
+.yellow { background-color: #ffaa00; }
+.pink { background-color: #ff66cc; }
+
+/* === STATS === */
+#stats {
+  padding: 70px 20px;
+  background-color: #170033;
+}
+
+#stats h2 {
+  font-size: 30px;
+  margin-bottom: 25px;
+  color: #ff33cc;
+}
+
+.stats-container {
+  display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 30px;
 }
 
-.btn {
-  padding: 12px 18px;
+.stat {
+  background: #25004d;
+  padding: 30px;
+  border-radius: 12px;
+  width: 160px;
+  box-shadow: 0 0 15px rgba(255, 0, 150, 0.3);
+}
+
+.stat h3 {
+  font-size: 26px;
+  color: #ff66cc;
+}
+
+/* === APP DOWNLOAD === */
+#app {
+  background-color: #100020;
+  padding: 80px 20px;
+  border-top: 2px solid #ff0099;
+}
+
+#app h2 {
+  color: #ff33cc;
+  margin-bottom: 15px;
+}
+
+#app p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.app-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.android-btn {
+  background-color: #25D366;
+}
+
+.ios-btn {
+  background-color: #007aff;
+}
+
+/* === CONTACT === */
+#contact {
+  background-color: #0b0014;
+  padding: 50px 20px;
+  border-top: 2px solid #ff0099;
+}
+
+#contact h2 {
+  color: #ff33cc;
+  margin-bottom: 15px;
+}
+
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25D366;
+  color: white;
+  font-weight: bold;
+  padding: 12px 24px;
   border-radius: 8px;
   text-decoration: none;
-  color: #fff;
-  font-size: 14px;
+  font-size: 18px;
+  transition: 0.3s;
 }
 
-.android {
-  background: #32d851;
+.whatsapp-btn:hover {
+  background-color: #1ebe5b;
+  transform: scale(1.05);
 }
 
-.ios {
-  background: #1e90ff;
+.whatsapp-icon {
+  width: 26px;
+  height: 26px;
+  margin-right: 10px;
+  filter: brightness(0) invert(1);
 }
 
-/* FLOATING WHATSAPP BUTTON */
+/* === FLOATING WHATSAPP ICON === */
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  width: 55px;
-  height: 55px;
+  z-index: 1000;
   background-color: #25D366;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 999999;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  padding: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 .whatsapp-float img {
-  width: 28px;
-  height: 28px;
+  width: 38px;
+  height: 38px;
 }
 
-/* MOBILE */
+/* === RESPONSIVE === */
 @media (max-width: 768px) {
-  .whatsapp-float {
-    width: 45px;
-    height: 45px;
+  header {
+    flex-direction: column;
   }
-
-  .whatsapp-float img {
-    width: 22px;
-    height: 22px;
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  .pricing-container {
+    flex-direction: column;
+    align-items: center;
   }
 }
