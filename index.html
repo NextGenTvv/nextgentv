@@ -1,61 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NextGenTV</title>
-
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NextGenTV - Premium IPTV</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- HEADER -->
-  <header class="header">
-    <div class="logo">NextGenTV</div>
-    <nav class="nav">
-      <a href="#">Home</a>
-      <a href="#">Pricing</a>
-      <a href="#">Channels</a>
-      <a href="#">Stats</a>
-      <a href="#">Reviews</a>
-      <a href="#">Contact</a>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="NextGenTV Logo" class="logo-img">
+      <span class="logo-text">NextGenTV</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#channels">Channels</a></li>
+        <li><a href="#stats">Stats</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
-  <!-- MAIN CONTENT -->
-  <main class="main">
-    <section class="card">
-      <h1>Download Our App</h1>
-      <p>
-        Get NextGenTV on any device — Android TV, Firestick, Smart TV or iOS.
-        Install the app and start streaming instantly with the best IPTV experience.
-      </p>
+  <section class="hero">
+    <h1>Welcome to NextGenTV</h1>
+    <p>Enjoy premium IPTV with HD & 4K channels, instant activation, and 24/7 support.</p>
+    <a href="#pricing" class="btn-primary">View Pricing</a>
+  </section>
 
-      <p class="code">
-        📲 Downloader Code: <strong>6044982</strong>
-      </p>
-
-      <div class="buttons">
-        <a href="https://go.aftvnews.com/6044982" target="_blank" class="btn android">
-          🤖 Download for Android / Firestick
-        </a>
-
-        <a href="https://apps.apple.com/us/app/vivo-player-smart-iptv-player/id6479256394"
-           target="_blank" class="btn ios">
-          🍎 Download for iOS (Vivo Player)
-        </a>
+  <section id="pricing" class="pricing">
+    <h2>Our Packages</h2>
+    <div class="pricing-container">
+      <div class="price-card">
+        <img src="logo.png" class="price-logo" alt="NextGenTV">
+        <h3>6 Months</h3>
+        <p class="price">35€</p>
+        <ul>
+          <li>HD & 4K Channels</li>
+          <li>Instant Activation</li>
+          <li>Full Support</li>
+          <li>24 Hour Test Line</li>
+        </ul>
+        <a href="https://wa.me/447417337834" class="btn-primary">Buy Now</a>
       </div>
-    </section>
-  </main>
+      <div class="price-card">
+        <img src="logo.png" class="price-logo" alt="NextGenTV">
+        <h3>12 Months</h3>
+        <p class="price">60€</p>
+        <ul>
+          <li>HD & 4K Channels</li>
+          <li>Instant Activation</li>
+          <li>Annual Savings</li>
+          <li>24 Hour Test Line</li>
+        </ul>
+        <a href="https://wa.me/447417337834" class="btn-primary">Buy Now</a>
+      </div>
+    </div>
+  </section>
 
-  <!-- FLOATING WHATSAPP BUTTON -->
-  <a href="https://wa.me/447418337834"
-     class="whatsapp-float"
-     target="_blank"
-     aria-label="Chat on WhatsApp">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-         alt="WhatsApp">
+  <section id="channels">
+    <h2>Our Channels</h2>
+    <p>Explore 10,000+ live channels, movies, and series from all around the world — including sports, kids, and music in HD & 4K.</p>
+    <div class="channel-tags">
+      <span class="tag red">Live TV</span>
+      <span class="tag purple">Movies</span>
+      <span class="tag blue">Series</span>
+      <span class="tag green">Sports</span>
+      <span class="tag yellow">Music</span>
+      <span class="tag pink">Kids</span>
+    </div>
+  </section>
+
+  <section id="stats">
+    <h2>Why Choose NextGenTV</h2>
+    <div class="stats-container">
+      <div class="stat"><h3>10K+</h3><p>Channels</p></div>
+      <div class="stat"><h3>5000+</h3><p>Movies & Series</p></div>
+      <div class="stat"><h3>4K</h3><p>Quality</p></div>
+    </div>
+  </section>
+
+  <section id="app">
+    <h2>Download Our App</h2>
+    <p>Get NextGenTV on any device — Android TV, Firestick, Smart TV or iOS.</p>
+    <p>Install and start streaming instantly with the best IPTV experience.</p>
+    <p>📺 Downloader Code: <strong>6044982</strong></p>
+    <div class="app-links">
+      <a href="https://go.aftvnews.com/6044982" target="_blank" class="btn-primary android-btn">🤖 Download for Android / Firestick</a>
+      <a href="https://apps.apple.com/us/app/vivo-player-smart-iptv-player/id6479256394" target="_blank" class="btn-primary ios-btn">🍎 Download for iOS (Vivo Player)</a>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <h2>Contact Us</h2>
+    <p>
+      <a href="https://wa.me/447417337834" target="_blank" class="whatsapp-btn">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
+        Chat on WhatsApp
+      </a>
+    </p>
+  </footer>
+
+  <a href="https://wa.me/447417337834" target="_blank" class="whatsapp-float">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
   </a>
 
+  <script src="main.js"></script>
 </body>
 </html>
