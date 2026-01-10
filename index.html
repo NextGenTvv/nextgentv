@@ -1,36 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NextGenTV - Premium IPTV Service</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NextGenTV – Premium IPTV</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header>
-    <img src="logo.png" alt="NextGenTV Logo" class="logo" />
-    <h1>NextGenTV</h1>
+    <div class="logo">
+      <img src="logo.png" alt="NextGenTV Logo" class="logo-img">
+      <span class="logo-text">NextGenTV</span>
+    </div>
     <nav>
-      <a href="#pricing">Pricing</a>
-      <a href="#channels">Channels</a>
-      <a href="#stats">Stats</a>
-      <a href="#app">App</a>
-      <a href="#reviews">Reviews</a>
-      <a href="#contact">Contact</a>
+      <ul>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#channels">Channels</a></li>
+        <li><a href="#stats">Stats</a></li>
+        <li><a href="#app">App</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
-  <section class="hero">
-    <h2>NextGenTV — The Future of Streaming</h2>
+  <section id="hero">
+    <h1>NextGenTV — The Future of Streaming</h1>
     <p>Enjoy premium IPTV with HD & 4K channels, instant activation, and 24/7 support.</p>
     <a href="#pricing" class="btn-primary">View Plans</a>
   </section>
 
-  <section id="pricing">
+  <section id="pricing" class="pricing">
     <h2>Our Packages</h2>
     <div class="pricing-container">
-      <div class="pricing-box">
-        <img src="logo.png" alt="Logo" class="price-logo" />
+      <div class="price-card">
+        <img src="logo.png" class="price-logo" alt="Logo">
         <h3>6 Months</h3>
         <p class="price">35 €</p>
         <ul>
@@ -39,11 +43,11 @@
           <li>Full Support</li>
           <li>24 Hours Test Line</li>
         </ul>
-        <a href="https://wa.me/447417337834" target="_blank" class="btn-secondary">Buy Now</a>
+        <a href="#contact" class="btn-primary">Buy Now</a>
       </div>
 
-      <div class="pricing-box">
-        <img src="logo.png" alt="Logo" class="price-logo" />
+      <div class="price-card">
+        <img src="logo.png" class="price-logo" alt="Logo">
         <h3>12 Months</h3>
         <p class="price">60 €</p>
         <ul>
@@ -52,7 +56,7 @@
           <li>Full Support</li>
           <li>24 Hours Test Line</li>
         </ul>
-        <a href="https://wa.me/447417337834" target="_blank" class="btn-secondary">Buy Now</a>
+        <a href="#contact" class="btn-primary">Buy Now</a>
       </div>
     </div>
   </section>
@@ -62,76 +66,45 @@
     <p>Explore 10,000+ live channels, movies, and series from all around the world — including sports, kids, and music content in HD & 4K.</p>
     <div class="channel-tags">
       <span class="tag red">Live TV</span>
-      <span class="tag blue">Movies</span>
-      <span class="tag cyan">Series</span>
+      <span class="tag purple">Movies</span>
+      <span class="tag blue">Series</span>
       <span class="tag green">Sports</span>
-      <span class="tag orange">Music</span>
+      <span class="tag yellow">Music</span>
       <span class="tag pink">Kids</span>
-      <span class="tag yellow">News</span>
-      <span class="tag purple">Documentary</span>
     </div>
   </section>
 
   <section id="stats">
     <h2>Why Choose NextGenTV</h2>
     <div class="stats-container">
-      <div class="stat-box">
-        <h3>10K+</h3>
-        <p>Live Channels</p>
-      </div>
-      <div class="stat-box">
-        <h3>5000+</h3>
-        <p>Movies & Series</p>
-      </div>
-      <div class="stat-box">
-        <h3>4K</h3>
-        <p>Quality</p>
-      </div>
-      <div class="stat-box">
-        <h3>99.9%</h3>
-        <p>Server Uptime</p>
-      </div>
+      <div class="stat"><h3>10K+</h3><p>Live Channels</p></div>
+      <div class="stat"><h3>5000+</h3><p>Movies & Series</p></div>
+      <div class="stat"><h3>4K</h3><p>Quality</p></div>
     </div>
   </section>
 
   <section id="app">
     <h2>Download Our App</h2>
-    <p>Get NextGenTV on any device — Android TV, Firestick, Smart TV, or iOS. Install the app and start streaming instantly with the best IPTV experience.</p>
-    <p>📱 Downloader Code: <strong>6044982</strong></p>
+    <p>Get NextGenTV on any device — Android TV, Firestick, Smart TV, or iOS.  
+       Install the app and start streaming instantly with the best IPTV experience.</p>
+    <p><strong>📺 Downloader Code:</strong> 6044982</p>
     <div class="app-links">
       <a href="https://go.aftvnews.com/6044982" target="_blank" class="btn-primary android-btn">🤖 Download for Android / Firestick</a>
       <a href="https://apps.apple.com/us/app/vivo-player-smart-iptv-player/id6479256394" target="_blank" class="btn-primary ios-btn">🍎 Download for iOS (Vivo Player)</a>
     </div>
   </section>
 
-  <section id="reviews">
-    <h2>What Our Customers Say</h2>
-    <div class="reviews-container">
-      <div class="review-box">
-        ⭐⭐⭐⭐⭐
-        <p>"Best IPTV service I’ve ever used! Super fast and crystal-clear quality."</p>
-        <h4>— Alex J.</h4>
-      </div>
-      <div class="review-box">
-        ⭐⭐⭐⭐⭐
-        <p>"Excellent customer support. Works perfectly on my Firestick!"</p>
-        <h4>— Maria K.</h4>
-      </div>
-      <div class="review-box">
-        ⭐⭐⭐⭐⭐
-        <p>"Huge channel selection and smooth streaming. Worth every euro!"</p>
-        <h4>— Luka P.</h4>
-      </div>
-    </div>
-  </section>
-
   <footer id="contact">
     <h2>Contact Us</h2>
-    <p><a href="https://wa.me/447417337834" target="_blank" class="whatsapp-btn">💬 Chat on WhatsApp</a></p>
+    <a href="https://wa.me/447417337834" target="_blank" class="whatsapp-btn">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
+      Chat on WhatsApp
+    </a>
   </footer>
 
-  <a href="https://wa.me/447417337834" target="_blank" class="whatsapp-float">💬</a>
+  <a href="https://wa.me/447417337834" class="whatsapp-float" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  </a>
 
-  <script src="main.js"></script>
 </body>
 </html>
