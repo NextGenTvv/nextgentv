@@ -430,3 +430,30 @@ footer a:hover {
   color: #00ff88;
   text-shadow: 0 0 10px #00ff88;
 }
+/* WhatsApp Button Style */
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25D366;
+  color: white;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-btn:hover {
+  background-color: #20ba5a;
+  transform: scale(1.05);
+}
+
+.whatsapp-icon {
+  width: 26px;
+  height: 26px;
+  margin-right: 10px;
+  filter: brightness(0) invert(1);
+}
