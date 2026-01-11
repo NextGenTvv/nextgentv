@@ -1,18 +1,15 @@
-const elements = document.querySelectorAll('.fade-in');
+// Fade-in animation on scroll
+const fadeElements = document.querySelectorAll('.fade-in');
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
+function fadeInOnScroll() {
+  fadeElements.forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 100) {
+      el.style.opacity = 1;
+      el.style.transform = 'translateY(0)';
     }
   });
-}, { threshold: 0.2 });
+}
 
-elements.forEach(el => observer.observe(el));
-
-document.querySelectorAll('.btn-click').forEach(button => {
-  button.addEventListener('click', () => {
-    button.classList.add('active');
-    setTimeout(() => button.classList.remove('active'), 300);
-  });
-});
+window.addEventListener('scroll', fadeInOnScroll);
+window.addEventListener('load', fadeInOnScroll);
