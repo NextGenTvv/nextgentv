@@ -152,3 +152,41 @@ section {
 @keyframes fadeIn {
   to { opacity: 1; }
 }
+/* ===== Section Enhancements ===== */
+
+section {
+  margin-bottom: 60px;
+  border-radius: 15px;
+  padding: 40px 20px;
+}
+
+/* --- Channels Section --- */
+#channels {
+  background: rgba(255, 0, 204, 0.05);
+  border: 1px solid #ff00cc;
+  box-shadow: 0 0 15px rgba(255, 0, 204, 0.3);
+}
+
+/* --- Stats Section --- */
+#stats {
+  background: rgba(0, 153, 255, 0.05);
+  border: 1px solid #3399ff;
+  box-shadow: 0 0 15px rgba(0, 153, 255, 0.3);
+}
+
+/* --- Testimonials Section --- */
+#testimonials {
+  background: rgba(255, 204, 0, 0.05);
+  border: 1px solid #ffcc00;
+  box-shadow: 0 0 15px rgba(255, 204, 0, 0.3);
+}
+
+#testimonials h2 {
+  color: #ffcc00;
+}
+
+#testimonials p {
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 1.6;
+}
