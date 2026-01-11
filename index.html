@@ -18,7 +18,7 @@
         <li><a href="#pricing">Pricing</a></li>
         <li><a href="#channels">Channels</a></li>
         <li><a href="#stats">Stats</a></li>
-        <li><a href="#app">App</a></li>
+        <li><a href="#app">Apps</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -85,23 +85,15 @@
 
   <section id="app" class="fade-in">
     <h2>Download Our Apps</h2>
-    <p>Get NextGenTV on any device — Android TV, Firestick, Smart TV, or iOS.  
-       Install the app and start streaming instantly with the best IPTV experience.</p>
-
+    <p>Get NextGenTV on any device — Android TV, Firestick, Smart TV, or iOS. Install and start streaming instantly.</p>
     <h3>📺 Downloader Codes</h3>
-    <p><strong>• 6044982 — NextGenTV App 1</strong></p>
-    <p><strong>• 5685051 — NextGenTV App 2</strong></p>
+    <p>6044982 — <strong>NextGenTV App 1</strong><br>
+       5685051 — <strong>NextGenTV App 2</strong></p>
 
     <div class="app-links">
-      <a href="https://go.aftvnews.com/6044982" target="_blank" class="btn-click">
-        🔶 NextGenTV App 1
-      </a>
-      <a href="http://aftv.news/5685051" target="_blank" class="btn-click">
-        🔶 NextGenTV App 2
-      </a>
-      <a href="https://apps.apple.com/us/app/vivo-player-smart-iptv-player/id6479256394" target="_blank" class="btn-click">
-        🔶 Vivo Player (iOS)
-      </a>
+      <a href="https://go.aftvnews.com/6044982" target="_blank" class="btn-click">🟡 NextGenTV App 1</a>
+      <a href="http://aftv.news/5685051" target="_blank" class="btn-click">🟡 NextGenTV App 2</a>
+      <a href="https://apps.apple.com/us/app/vivo-player-smart-iptv-player/id6479256394" target="_blank" class="btn-click">🍎 Vivo Player (iOS)</a>
     </div>
   </section>
 
@@ -117,26 +109,6 @@
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
   </a>
 
-  <script>
-    const elements = document.querySelectorAll('.fade-in');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, { threshold: 0.2 });
-
-    elements.forEach(el => observer.observe(el));
-
-    // Add click animation
-    document.querySelectorAll('.btn-click').forEach(button => {
-      button.addEventListener('click', () => {
-        button.classList.add('active');
-        setTimeout(() => button.classList.remove('active'), 300);
-      });
-    });
-  </script>
-
+  <script src="main.js"></script>
 </body>
 </html>
