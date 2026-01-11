@@ -190,3 +190,22 @@ section {
   font-size: 15px;
   line-height: 1.6;
 }
+/* Glowing underline for testimonial title */
+#testimonials h2 {
+  position: relative;
+  display: inline-block;
+  color: #ffcc00;
+  text-shadow: 0 0 10px #ffcc00;
+}
+
+#testimonials h2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 3px;
+  background: #ffcc00;
+  box-shadow: 0 0 15px #ffcc00, 0 0 30px #ffcc00;
+  border-radius: 2px;
+}
