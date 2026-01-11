@@ -72,14 +72,15 @@ section {
   border: 2px solid #ff00cc;
   border-radius: 15px;
   padding: 40px 20px;
-  width: 320px; /* make same width as other frames */
+  width: 90%;
+  max-width: 500px; /* Makes same width as section boxes */
   text-align: center;
   box-shadow: 0 0 15px rgba(255, 0, 204, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .price-card:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
   box-shadow: 0 0 25px rgba(255, 0, 204, 0.6);
 }
 
