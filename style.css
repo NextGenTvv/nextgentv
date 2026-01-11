@@ -146,3 +146,45 @@ section {
   transform: translateY(-8px);
   box-shadow: 0 0 30px rgba(255, 0, 204, 0.6);
 }
+/* Reviews Section */
+#reviews {
+  padding: 60px 20px;
+  background: linear-gradient(180deg, #0a0015, #150026);
+  color: white;
+}
+
+#reviews h2 {
+  font-size: 1.8em;
+  margin-bottom: 30px;
+}
+
+.reviews-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.review-card {
+  background: #1a0030;
+  border: 2px solid #ff00cc;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 300px;
+  box-shadow: 0 0 20px rgba(255, 0, 204, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+}
+
+.review-card p {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.review-card h4 {
+  color: #ff66ff;
+  font-size: 1em;
+}
