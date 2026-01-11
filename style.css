@@ -64,16 +64,18 @@ section {
 .pricing-container {
   display: flex;
   justify-content: center;
+  align-items: stretch;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 40px; /* spacing between boxes */
 }
 .price-card {
   background: rgba(255, 0, 204, 0.05);
   border: 2px solid #ff00cc;
   border-radius: 15px;
   padding: 40px 20px;
-  width: 90%;
-  max-width: 500px; /* Makes same width as section boxes */
+  width: 45%;             /* side by side on desktop */
+  max-width: 450px;
+  min-width: 280px;       /* stack nicely on mobile */
   text-align: center;
   box-shadow: 0 0 15px rgba(255, 0, 204, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
