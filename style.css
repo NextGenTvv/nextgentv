@@ -11,7 +11,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background: linear-gradient(90deg, #ff00cc, #333399);
-  padding: 10px 20px;
+  padding: 15px 25px;     /* Slightly taller header */
 }
 
 .logo {
