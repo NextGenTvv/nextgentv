@@ -78,11 +78,18 @@ section {
 }
 
 .price-logo {
-  width: 110px;          /* Bigger logo */
+  width: 120px;               /* Bigger logo */
   margin-bottom: 20px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  filter: drop-shadow(0 0 10px #ff00cc); /* Neon glow */
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.price-logo:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 20px #ff33ff);
 }
 
 .tag {
