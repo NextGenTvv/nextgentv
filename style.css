@@ -181,15 +181,6 @@ section {
   box-shadow: 0 0 15px rgba(255, 204, 0, 0.3);
 }
 
-#testimonials h2 {
-  color: #ffcc00;
-}
-
-#testimonials p {
-  color: #ffffff;
-  font-size: 15px;
-  line-height: 1.6;
-}
 /* Glowing underline for testimonial title */
 #testimonials h2 {
   position: relative;
